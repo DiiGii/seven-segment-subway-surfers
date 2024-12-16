@@ -14,7 +14,8 @@ The player will earn a higher score the longer they survive. As time goes on, th
 ## Implementation
 Find our top-level design module in `game.v`. Find our various other modules, including some for the PMOD JSTK adapted from Josh Sackos. 
 
-Below are more detailed descriptions of our implementation: 
+Below are more detailed descriptions of our implementation:
+
 Our design was split up into 7 main modules, with 4 supplementary modules handling the joystick PMOD input. Each module handled one main aspect of our project, and this structure made it much easier to make incremental changes, building on our past work effectively.
 
 The top-level module, Game, is mainly used to instantiate each other module and connect them all. It takes input from and sends output to the Basys 3 board and joystick module. It also does some important tasks like setting up clocks to be used in other modules and extracting the joystick data from the Pmod modules.
